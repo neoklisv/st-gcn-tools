@@ -170,14 +170,14 @@ def main(video_path):
         line += '[' + label_map[int(act)] + ',' + str(prob) + '],' 
 
     line += '\n'
-    file = open("demo/log.txt", "a")
+    file = open("log.txt", "a")
     file.write(line)
 
 
 
 if __name__ == '__main__':
 
-    list_videos = glob.glob('demo/fall_videos/*.avi')
+    list_videos = glob.glob('video_files/*.avi')
 
     for video in list_videos:
         frame_no=0
